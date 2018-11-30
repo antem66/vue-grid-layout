@@ -43,7 +43,7 @@
     }
 
     .vue-grid-item.vue-grid-placeholder {
-        background: red;
+        background: #2F2F4F;
         opacity: 0.2;
         transition-duration: 100ms;
         z-index: 2;
@@ -80,7 +80,7 @@
         cursor: sw-resize;
         right: auto;
     }
-    
+
     .vue-grid-item.disable-userselect {
         user-select: none;
     }
@@ -256,6 +256,10 @@
                 self.rowHeight = rowHeight;
             };
 
+            self.setMaxRowsHandler = function (maxRows) {
+                self.maxRows = maxRows;
+            };
+
             self.directionchangeHandler = () => {
                 this.rtl = getDocumentDir();
                 this.compact();
@@ -270,6 +274,7 @@
             this.eventBus.$on('setDraggable', self.setDraggableHandler);
             this.eventBus.$on('setResizable', self.setResizableHandler);
             this.eventBus.$on('setRowHeight', self.setRowHeightHandler);
+            this.eventBus.$on('setMaxRows', self.setMaxRowsHandler);
             this.eventBus.$on('directionchange', self.directionchangeHandler);
             this.eventBus.$on('setColNum', self.setColNum)
 
