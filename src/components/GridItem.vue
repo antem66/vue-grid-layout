@@ -36,7 +36,7 @@
         opacity: 0.6;
         z-index: 3;
     }
-
+    
     .vue-grid-item.vue-draggable-dragging {
         transition:none;
         z-index: 3;
