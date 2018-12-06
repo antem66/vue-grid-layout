@@ -17,8 +17,8 @@
     "url": "https://github.com/jbaysolutions/vue-grid-layout.git"
   },
   "author": "Gustavo Santos (JBay Solutions) <gustavo.santos@jbaysolutions.com> (http://www.jbaysolutions.com)",
-  "main": "dist/vue-grid-layout.common.js",
-  "unpkg": "dist/vue-grid-layout.umd.min.js",
+  "main": "dist/js/app.d5373810.js",
+  "unpkg": "dist/js/app.d5373810.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "rimraf dist && vue-cli-service build",
