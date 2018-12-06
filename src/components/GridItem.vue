@@ -36,14 +36,14 @@
         opacity: 0.6;
         z-index: 3;
     }
-    
+
     .vue-grid-item.vue-draggable-dragging {
         transition:none;
         z-index: 3;
     }
 
     .vue-grid-item.vue-grid-placeholder {
-        background: #2F2F4F;
+        background: blue;
         opacity: 0.2;
         transition-duration: 100ms;
         z-index: 2;
